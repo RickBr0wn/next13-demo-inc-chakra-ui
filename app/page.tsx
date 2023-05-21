@@ -1,8 +1,13 @@
 import Link from 'next/link'
+import type { Metadata } from 'next/types'
 import type { FC, ReactNode } from 'react'
 
 type PageProps = {
   children: ReactNode
+}
+
+export const metadata: Metadata = {
+  title: 'My Page Title',
 }
 
 const Home: FC<PageProps> = (): JSX.Element => {
