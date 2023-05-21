@@ -1,11 +1,16 @@
-import type { FC } from 'react'
+import Link from 'next/link'
+import type { FC, ReactNode } from 'react'
 
-interface PageProps {}
+type PageProps = {
+  children: ReactNode
+}
 
 const Home: FC<PageProps> = (): JSX.Element => {
+  //                                  ^?
   return (
     <main>
-      <h1>Home</h1>
+      <Link href="/about">Link to About Page</Link>
+      <h1>Home Page</h1>
     </main>
   )
 }
