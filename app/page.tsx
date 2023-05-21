@@ -1,10 +1,7 @@
-import Link from 'next/link'
 import type { Metadata } from 'next/types'
-import type { FC, ReactNode } from 'react'
+import type { FC } from 'react'
 
-type PageProps = {
-  children: ReactNode
-}
+type PageProps = {}
 
 export const metadata: Metadata = {
   title: 'My Page Title',
@@ -14,7 +11,6 @@ const Home: FC<PageProps> = (): JSX.Element => {
   //                                  ^?
   return (
     <main>
-      <Link href="/about">Link to About Page</Link>
       <h1>Home Page</h1>
     </main>
   )
